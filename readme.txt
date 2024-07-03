@@ -13,7 +13,7 @@ Folgende Anforderungen waren zu erfüllen
 
 2. Dem Spieler sollen nacheinander die Quizfragen präsentiert werden. Jede Frage soll 4 mögliche
 Antwortmöglichkeiten bereitstellen (a, b, c, d) aus denen der Spieler eine Antwort wählen muss.
-(Neben der Umsetzung dieser Anforderungen wurde auch ein 'Durchmischen' der Antworten bei jedem erneuten Fragen der Frage implementiert, sodass die richtige Antwort an verschiedenen Positionen erscheint.
+(Neben der Umsetzung dieser Anforderungen wurde auch ein 'Durchmischen' der Antworten bei jedem erneuten Fragen der Frage implementiert, sodass die richtige Antwort an verschiedenen Positionen erscheint.)
 
 3. Ein Durchgang soll 10 Fragen beinhalten. Um den Wiederspielwert zu erhöhen, sollen insgesamt
 mindestens 20 Fragen verfügbar sein, aus denen bei jedem Start des Quiz 10 Fragen zufällig ausgewählt werden.
