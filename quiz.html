@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skigebiete Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <h1>Willkommen zum großen Quiz der Skigebiete</h1>
+        <label for="player-count">Anzahl der Mitspieler</label>
+        <select id="player-count">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+		<br>
+        <label for="timer-option">Zeitbegrenzung:</label>
+        <input type="checkbox" id="timer-option">
+		<br>
+        <button onclick="startGame()">Namen eingeben</button>
+    </div>
+	
+	<div id="name-input-screen" class="screen hidden">
+		<h2>Spielernamen eingeben</h2>
+		<h3>(optional)</h3>
+		<div id="name-inputs"></div>
+		<button id="submit-names">Spiel beginnen</button>
+	</div>
+
+    <div id="question-screen" class="screen hidden">
+		<h3 id="turn-text">Spieler 1 ist an der Reihe:</h3>
+        <h2 id="question-text">Fragentext</h2>
+        <div id="answers"></div>
+		<br>
+        <div id="timer" class="hidden">Verbleibende Zeit: <span id="time-left">10</span>s</div>
+     </div>
+	
+	<div id="answer-screen" class="screen hidden">
+		<h3 id="as-turn-text">Auflösung:</h3>
+        <h2 id="as-question-text">Fragentext</h2>
+        <h3 id="correct-answer">Korrekte Antwort</h3>
+		<div id="player-answers">Spielerantworten</div>
+		<button onclick="moveAlong()">Fortfahren</button>
+    </div>
+
+    <div id="final-screen" class="screen hidden">
+        <h1>Finaler Punktestand:</h1>
+        <div id="scores"></div>
+        <button onclick="startNewGame()">Nochmal spielen (selbe Einstellungen)</button>
+        <button onclick="resetGame()">Hauptmenü</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

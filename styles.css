@@ -1,0 +1,55 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #2D3D4D;
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    display: block; /* Ensure the initial screen is visible */
+}
+
+.hidden {
+    display: none; /* Hide other screens */
+}
+
+#start-screen, #question-screen, #answer-screen, #final-screen, #name-input-screen {
+    padding: 20px;
+    background: #E1E1E1;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+#correct-answer {
+	font-weight: bold;
+	color: green;
+}	
+	
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+	background: repeat-x url("button_transient.png") #007bff center;
+    color: white;
+}
+
+button:hover {
+	background: repeat-x url("button_transient2.png") #3086e3 50% 45%;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+}
+
+#answers button {
+    margin: 5px 0;
+}
